@@ -46,6 +46,8 @@ If you login to the container with docker exec -it containername bash and you ca
 
 
 --> to connect custom bridge network to default custom network
+
+
 docker network connect custom app1 
 
 # Using the HOST Network Mode
