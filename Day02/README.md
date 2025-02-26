@@ -44,6 +44,10 @@ docker run –rm -d –name app4 -p 8002 –network myapp  kiran2361993:troubles
 
 If you login to the container with docker exec -it containername bash and you can ping with the container name instead of IP, It should work. 
 
+
+--> to connect custom bridge network to default custom network
+docker network connect custom app1 
+
 # Using the HOST Network Mode
 
 The HOST network mode means the container shares the host's IP address. This eliminates the need for port forwarding when running the container. For example, when using Prometheus with Node Exporter, it utilizes the host IP for metric collection, making it easier to access the metrics.
